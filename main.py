@@ -9,7 +9,7 @@ all_rows = []
 params = {
     "size": 1000,
     "qs": "date_etablissement_dpe:[2021-01-01 TO 2021-12-31] OR date_etablissement_dpe:[2024-01-01 TO 2024-12-31]",
-    "select": "numero_dpe,date_etablissement_dpe",
+    "select": "numero_dpe,date_etablissement_dpe,methode_application_dpe, etiquette_dpe, type_batiment, periode_construction, zone_climatique, code_insee_ban, typologie_logement, nombre_niveau_immeuble, nombre_niveau_logement, nombre_appartement, type_energie_principale_chauffage, type_energie_principale_ecs, type_ventilation, conso_5_usages_par_m2_ep, emission_ges_5_usages_par_m2, cout_chauffage, cout_ecs, cout_total_5_usages",
     "sort": "_id"
 }
 
