@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-df = pd.read_csv('/home/onyxia/work/dpe_2021_2024_partial.csv')
+df = pd.read_csv('/home/onyxia/work/dpe_2021_2026.csv')
 
 print(df.columns)
 
@@ -78,13 +78,13 @@ plt.show()
 fig, ax = plt.subplots(figsize=(16, 5))
 monthly_label.plot(kind="bar", stacked=True, ax=ax, color=colors, width=0.8)
 
-ax.set_title("DPE certificates issued per month by energy label")
+ax.set_title("DPE certificates issued per month by energy label as %")
 ax.set_xlabel("Month")
 ax.set_ylabel("Count")
 ax.legend(title="Etiquette DPE", bbox_to_anchor=(1.01, 1), loc="upper left")
 plt.xticks(rotation=45, ha="right")
 plt.tight_layout()
-plt.savefig("dpe_monthly_by_label.png", dpi=150)
+plt.savefig("dpe_monthly_by_label_%.png", dpi=150)
 plt.show()
 
 fig, ax = plt.subplots(figsize=(16, 5))
